@@ -10,9 +10,11 @@ public class JeuV1 : MonoBehaviour
 
     public int pointsJeu = 0;
 
+
     void Start()
     {
         pointsJeu = 0;
+
     }
 
     void Update()
@@ -21,5 +23,7 @@ public class JeuV1 : MonoBehaviour
         pointsJeu = _collecteur.points;
         // Actualiser l'UI
         _etiquettePoints.text = "$" + pointsJeu.ToString();
+
+
     }
 }
